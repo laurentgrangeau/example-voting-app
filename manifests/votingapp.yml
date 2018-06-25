@@ -76,7 +76,7 @@ spec:
         app: result
     spec:
       containers:
-      - image: dockersamples/examplevotingapp_result:before
+      - image: laurentgrangeau/examplevotingapp_result:1.0
         name: result
 ---
 apiVersion: v1
@@ -105,7 +105,7 @@ spec:
         app: vote
     spec:
       containers:
-      - image: dockersamples/examplevotingapp_vote:before
+      - image: laurentgrangeau/examplevotingapp_vote:1.0
         name: vote
 ---
 apiVersion: v1
@@ -134,6 +134,5 @@ spec:
         app: worker
     spec:
       containers:
-      - image: dockersamples/examplevotingapp_worker
+      - image: laurentgrangeau/examplevotingapp_worker:1.0
         name: worker
-        
